@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce App</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <!-- Navigation to switch routes -->
+    <nav>
+        <a href="#" id="nav-shop" class="nav-link active">Shop</a>
+        <a href="#" id="nav-admin" class="nav-link">Admin</a>
+    </nav>
+
+    <main>
+        <!-- Route 1: Shop Page (Buy Products) -->
+        <section id="shop-page" class="page active">
+            <div class="column">
+                <h2>Products</h2>
+                <div id="shop-product-list">
+                    <p>Loading products...</p>
+                </div>
+            </div>
+            <div class="column">
+                <h2>Your Orders</h2>
+                <div id="order-list">
+                    <p>Loading orders...</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Route 2: Admin Page (Add/Delete Products) -->
+        <section id="admin-page" class="page">
+            <div class="column">
+                <h2>Add New Product</h2>
+                <form id="add-product-form">
+                    <div>
+                        <label for="name">Product Name</label>
+                        <input type="text" id="name" required>
+                    </div>
+                    <div>
+                        <label for="description">Description</label>
+                        <textarea id="description" rows="3"></textarea>
+                    </div>
+                    <div>
+                        <label for="price">Price</label>
+                        <input type="number" id="price" step="0.01" min="0" required>
+                    </div>
+                    <button type="submit">Add Product</button>
+                </form>
+            </div>
+            <div class="column">
+                <h2>Manage Products</h2>
+                <div id="admin-product-list">
+                    <p>Loading products...</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>

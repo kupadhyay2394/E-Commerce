@@ -1,0 +1,4 @@
+com\example\ecommerceapi\EcommerceApiApplication.class
+com\example\ecommerceapi\Product.class
+com\example\ecommerceapi\ProductRepository.class
+com\example\ecommerceapi\ProductController.class
